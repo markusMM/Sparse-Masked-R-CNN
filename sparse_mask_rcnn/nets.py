@@ -1776,7 +1776,7 @@ class MaskRCNN(nn.Module):
         val_dataset: Dataset, 
         learning_rate: float, 
         epochs: int, 
-        layers: list, 
+        layers: str, 
         l2_norm: bool = True,
         l1_norm: bool = False,
         use_sigma: bool = True
