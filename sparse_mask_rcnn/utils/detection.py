@@ -1,12 +1,8 @@
-############################################################
-#  Bounding Boxes
-############################################################
-
 import numpy as np
 import scipy
 import torch
 
-
+# %% bounding boxes
 def extract_bboxes(mask):
     """Compute bounding boxes from masks.
     mask: [height, width, num_instances]. Mask pixels are either 1 or 0.
@@ -172,10 +168,7 @@ def unmold_mask(mask, bbox, image_shape):
     return full_mask
 
 
-############################################################
-#  Anchors
-############################################################
-
+# %% anchors
 def generate_anchors(scales, ratios, shape, feature_stride, anchor_stride):
     """
     scales: 1D array of anchor sizes in pixels. Example: [32, 64, 128]
