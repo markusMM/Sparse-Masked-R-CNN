@@ -1,0 +1,10 @@
+argparse
+h5py
+pillow
+ipython
+numpy
+scikit-image
+torch
+torchvision
+tensorboard
+pycocotools
